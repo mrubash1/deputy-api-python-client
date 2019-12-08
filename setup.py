@@ -19,6 +19,15 @@ import setuptools
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
+DEPENDENCIES = (
+    "absl-py",
+    "urllib3",
+    "pytype",
+    "attrs>=19",
+    "parameterized",
+    "python-dateutil",
+)
+
 setuptools.setup(
     name="google-deputy-api-python-client",
     version="0.0.1",
@@ -33,5 +42,6 @@ setuptools.setup(
         "License :: OSI Approved :: Apache Software License",
         "Operating System :: OS Independent",
     ],
+    install_requires=DEPENDENCIES,
     python_requires='>=3.6',
 )

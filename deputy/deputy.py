@@ -52,7 +52,7 @@ Employee
 
 Usage:
 
-  import deputy
+  from deputy import deputy
 
   # There are two ways to instantiate the Deputy object. To use the flag values
   # provided when launching the binary:
@@ -75,7 +75,7 @@ now'. To find employees on shift during another time, you can change the value
 provided for the `--current_datetime_override` flag. To find 'employees on shift
 right now':
 
-  import deputy
+  from deputy import deputy
 
   client = deputy.Deputy.from_flags()
 
